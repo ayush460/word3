@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.fx.GamePageController"
+            prefHeight="400.0" prefWidth="600.0">
+<Text fill="Red" layoutX="200.0" layoutY="35.0" text="Dictionary">
+    <font>
+        <Font size="35.0">
+
+        </Font>
+    </font>
+</Text>
+    <Text fill="darkred" layoutX="215.0" layoutY="85.0" text="Search For Word">
+        <font>
+            <Font size="15.0">
+
+            </Font>
+        </font>
+    </Text>
+    <TextField fx:id="searchword" layoutY="100" layoutX="200" minWidth="100" minHeight="20" promptText="Enter a word"></TextField>
+    <ImageView fitHeight="20" fitWidth="100" layoutY="100" layoutX="350" onMouseClicked="#search">
+
+        <image>
+<Image url="@add.png"/>
+
+
+        </image>
+    </ImageView>
+    <Text  fill="blue" layoutX="210.0" layoutY="190.0" text="Enter a New Word">
+        <font>
+            <Font size="15.0">
+
+            </Font>
+        </font>
+    </Text>
+    <TextField fx:id="word" layoutY="200" layoutX="200" minWidth="100" minHeight="20" promptText="Enter a word"></TextField>
+    <TextField fx:id="meaning" layoutY="250" layoutX="200" minWidth="100" minHeight="20" promptText="Enter The Meaning"></TextField>
+    <ImageView fitHeight="20" fitWidth="100" layoutY="250" layoutX="350" onMouseClicked="#newword">
+
+        <image>
+            <Image url="@addword.png"/>
+
+
+        </image>
+    </ImageView>
+</AnchorPane>
